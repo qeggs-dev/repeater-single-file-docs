@@ -1,0 +1,330 @@
+[
+    {
+        "name": "Deepseek",
+        "api_key_env": "DEEPSEEK_API_KEY",
+        "url": "https://api.deepseek.com",
+        "models": [
+            {
+                "name": "Deepseek-Think-Model(681B/A37B/128K Context)",
+                "id": "deepseek-reasoner",
+                "uid": "deepseek-reasoner",
+                "type": "chat"
+            },
+            {
+                "name": "Deepseek-Chat-Model(681B/A37B/128K Context)",
+                "id": "deepseek-chat",
+                "uid": "deepseek-chat",
+                "type": "chat"
+            }
+        ]
+    },
+    {
+        "name": "MoonShot",
+        "api_key_env": "MOONSHOT_API_KEY",
+        "url": "https://api.moonshot.cn/v1",
+        "models": [
+            {
+                "name": "Kimi-K2-0905(1T/A32B/256K Context)",
+                "id": "kimi-k2-0905-preview",
+                "uid": "kimi-k2-0905-preview",
+                "type": "chat"
+            },
+            {
+                "name": "Kimi-K2-0711(1T/A32B/128K Context)",
+                "id": "kimi-k2-0711-preview",
+                "uid": "kimi-k2-0711-preview",
+                "type": "chat"
+            },
+            {
+                "name": "Kimi-K2-Turbo(1T/A32B/256K Context)",
+                "id": "kimi-k2-turbo-preview",
+                "uid": "kimi-k2-turbo-preview",
+                "type": "chat"
+            },
+            {
+                "name": "Kimi-K2-Thinking(1T/A32B/256K Context)",
+                "id": "kimi-k2-thinking",
+                "uid": "kimi-k2-thinking",
+                "type": "chat"
+            },
+            {
+                "name": "Kimi-K2-Thinking-Turbo(1T/A32B/256K Context)",
+                "id": "kimi-k2-thinking-turbo",
+                "uid": "kimi-k2-thinking-turbo",
+                "type": "chat"
+            },
+            {
+                "name": "Kimi-K2.5(1T/A32B/256K Context/Omnimodal)",
+                "id": "kimi-k2.5",
+                "uid": "kimi-k2.5",
+                "type": "chat"
+            }
+        ]
+    },
+    {
+        "name": "Baidu Qianfan",
+        "api_key_env": "QIANFAN_API_KEY",
+        "url": "https://qianfan.baidubce.com/v2",
+        "models": [
+            {
+                "name": "Deepseek-R1(671B/A37B/144K Context)",
+                "id": "deepseek-r1",
+                "uid": "deepseek-r1",
+                "type": "chat"
+            },
+            {
+                "name": "Deepseek-R1-250528(671B/A37B/144K Context)",
+                "id": "deepseek-r1-250528",
+                "uid": "deepseek-r1-250528",
+                "type": "chat"
+            },
+            {
+                "name": "Deepseek-V3(671B/A37B/128K Context)",
+                "id": "deepseek-v3",
+                "uid": "deepseek-v3",
+                "type": "chat"
+            },
+            {
+                "name": "DeepSeek-V3.2-Think(681B/A37B/144K Context)",
+                "id": "deepseek-v3.2-think",
+                "uid": "deepseek-v3.2-think",
+                "type": "chat"
+            },
+            {
+                "name": "DeepSeek-V3.2(681B/A37B/128K Context)",
+                "id": "deepseek-v3.2",
+                "uid": "deepseek-v3.2",
+                "type": "chat"
+            },
+            {
+                "name": "DeepSeek-V3.1-250821(681B/A37B/128K Context)",
+                "id": "deepseek-v3.1-250821",
+                "uid": "deepseek-v3.1-250821",
+                "type": "chat"
+            },
+            {
+                "name": "DeepSeek-V3.1-Think-250821(681B/A37B/144K Context)",
+                "id": "deepseek-v3.1-think-250821",
+                "uid": "deepseek-v3.1-think-250821",
+                "type": "chat"
+            },
+            {
+                "name": "DeepSeek-R1-Distill-Qwen-32B(32K Context)",
+                "id": "deepseek-r1-distill-qwen-32b",
+                "uid": "deepseek-r1-distill-qwen-32b",
+                "type": "chat"
+            },
+            {
+                "name": "DeepSeek-R1-Distill-Qwen-14B(32K Context)",
+                "id": "deepseek-r1-distill-qwen-14b",
+                "uid": "deepseek-r1-distill-qwen-14b",
+                "type": "chat"
+            },
+            {
+                "name": "ERNIE-4.5-Turbo(400B+/A28B/128K Context)",
+                "id": "ernie-4.5-turbo-128k",
+                "uid": "ernie-4.5-turbo",
+                "type": "chat"
+            },
+            {
+                "name": "ERNIE-X1.1(400B+/A28B/128K Context)",
+                "id": "ernie-x1.1",
+                "uid": "ernie-x1.1",
+                "type": "chat"
+            },
+            {
+                "name": "ERNIE-5.0-Thinking-Preview(400B+/A28B/128K Context/Omnimodal)",
+                "id": "ernie-5.0-thinking-preview",
+                "uid": "ernie-5.0-thinking",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-Coder-480B-A35B-Instruct(128K Context)",
+                "id": "qwen3-coder-480b-a35b-instruct",
+                "uid": "qwen3-coder-480b-a35b-instruct",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-Coder-30B-A3B-Instruct(128K Context)",
+                "id": "qwen3-coder-30b-a3b-instruct",
+                "uid": "qwen3-coder-30b-a3b-instruct",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-Next-80B-A3B-Instruct(128K Context)",
+                "id": "qwen3-next-80b-a3b-instruct",
+                "uid": "qwen3-next-80b-a3b-instruct",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-235B-A22B-Instruct-2507(128K Context)",
+                "id": "qwen3-235b-a22b-instruct-2507",
+                "uid": "qwen3-235b-a22b-instruct-2507",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-30B-A3B-Instruct-2507(128K Context)",
+                "id": "qwen3-30b-a3b-instruct-2507",
+                "uid": "qwen3-30b-a3b-instruct-2507",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-235B-A22B(32K Context)",
+                "id": "qwen3-235b-a22b",
+                "uid": "qwen3-235b-a22b",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-30B-A3B(32K Context)",
+                "id": "qwen3-30b-a3b",
+                "uid": "qwen3-30b-a3b",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-32B(32K Context)",
+                "id": "qwen3-32b",
+                "uid": "qwen3-32b",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-14B(32K Context)",
+                "id": "qwen3-14b",
+                "uid": "qwen3-14b",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-8B(32K Context)",
+                "id": "qwen3-8b",
+                "uid": "qwen3-8b",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-4B(32K Context)",
+                "id": "qwen3-4b",
+                "uid": "qwen3-4b",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-1.7B(32K Context)",
+                "id": "qwen3-1.7b",
+                "uid": "qwen3-1.7b",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-0.6B(32K Context)",
+                "id": "qwen3-0.6b",
+                "uid": "qwen3-0.6b",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen2.5-7B-Instruct(32K Context)",
+                "id": "qwen2.5-7b-instruct",
+                "uid": "qwen2.5-7b-instruct",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-VL-32B-Instruct(128K Context/MultiModal)",
+                "id": "qwen3-vl-32b-instruct",
+                "uid": "qwen3-vl-32b-instruct",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-VL-32B-Thinking(128K Context/MultiModal)",
+                "id": "qwen3-vl-32b-thinking",
+                "uid": "qwen3-vl-32b-thinking",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-VL-8B-Instruct(128K Context/MultiModal)",
+                "id": "qwen3-vl-8b-instruct",
+                "uid": "qwen3-vl-8b-instruct",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-VL-8B-Thinking(128K Context/MultiModal)",
+                "id": "qwen3-vl-8b-thinking",
+                "uid": "qwen3-vl-8b-thinking",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-VL-30B-A3B-Instruct(128K Context/MultiModal)",
+                "id": "qwen3-vl-30b-a3b-instruct",
+                "uid": "qwen3-vl-30b-a3b-instruct",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-VL-30B-A3B-Thinking(128K Context/MultiModal)",
+                "id": "qwen3-vl-30b-a3b-thinking",
+                "uid": "qwen3-vl-30b-a3b-thinking",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-VL-235B-A22B-Instruct(128K Context/MultiModal)",
+                "id": "qwen3-vl-235b-a22b-instruct",
+                "uid": "qwen3-vl-235b-a22b-instruct",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-VL-235B-A22B-Thinking(128K Context/MultiModal)",
+                "id": "qwen3-vl-235b-a22b-thinking",
+                "uid": "qwen3-vl-235b-a22b-thinking",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen2.5-VL-32B-Instruct(32K Context/MultiModal)",
+                "id": "qwen2.5-vl-32b-instruct",
+                "uid": "qwen2.5-vl-32b-instruct",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen2.5-VL-7B-Instruct(16K Context/MultiModal)",
+                "id": "qwen2.5-vl-7b-instruct",
+                "uid": "qwen2.5-vl-7b-instruct",
+                "type": "chat"
+            }
+        ]
+    },
+    {
+        "name": "Dashscope",
+        "api_key_env": "DASHSCOPE_API_KEY",
+        "url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "models": [
+            {
+                "name": "Qwen3.5-Plus(1M Context)",
+                "id": "qwen3.5-plus",
+                "uid": "qwen3.5-plus",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3.5-397B-A17B(256K Context)",
+                "id": "qwen3.5-397b-a17b",
+                "uid": "qwen3.5-397b-a17b",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-Max(1T/A100B/256K Context)",
+                "id": "qwen3-max",
+                "uid": "qwen3-max",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen-Plus(1M Context)",
+                "id": "qwen-plus",
+                "uid": "qwen-plus",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen3-VL-Plus(256K Context/MultiModal)",
+                "id": "qwen3-vl-plus",
+                "uid": "qwen3-vl-plus",
+                "type": "chat"
+            },
+            {
+                "name": "Qwen-Omni-Turbo(32K Context/Omnimodal)",
+                "id": "qwen-omni-turbo",
+                "uid": "qwen-omni-turbo",
+                "type": "chat"
+            }
+        ]
+    }
+]
