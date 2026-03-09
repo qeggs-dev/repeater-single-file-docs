@@ -449,29 +449,12 @@ Repeat公寓 -> Repeater 微服务系统
 提示词目录将使用新的方式进行归类存放
 在该版本前的提示词在目录中平铺存放
 而 `4.3.21.5` 及以后的版本中将使用目录进行整理归类
-官方提示词结构如下
+而官方提示词的旧版存放方式将在官方实例中继续保留
+以兼容旧用户的配置
+但后续维护中官方实例将不再更新这些提示词
+官方提示词结构如下：
 
-prompt
-  - presets
-    - official
-      - inverted
-        - old
-          - repeater.md
-          - night-light.md
-          - laurel.md
-        - repeater.md
-        - night-light.md
-        - laurel.md
-      - legacy
-        - first-glance
-        - test-run
-        - blossoming
-        - secret-diary
-        - coming-of-age
-      - normal
-        - repeater.md
-        - night-light.md
-        - laurel.md
+{{tree("./prompt")}}
 
 #### 正式剧情
 
