@@ -535,11 +535,11 @@ Repeater 并未有过所谓的 Feelings Server 组件
 早期复读机使用的角色提示词
 可能某些怀旧用户会喜欢
 由旧到新如下：
-1. legacy-first-glance（青春手稿）
-2. legacy-test-run（初试啼声）
-3. legacy-blossoming（心绪绽放）
-4. legacy-secret-diary（秘语日记）
-5. legacy-coming-of-age（成长序章）
+1. first-glance（青春手稿）
+2. test-run（初试啼声）
+3. blossoming（心绪绽放）
+4. secret-diary（秘语日记）
+5. coming-of-age（成长序章）
 
 旧版提示词内容如下：
 {{ merge_text("./prompt/presets/official/legacy/first-glance.md") }}
