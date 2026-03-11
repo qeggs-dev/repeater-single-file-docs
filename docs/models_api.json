@@ -5,13 +5,13 @@
         "url": "https://api.deepseek.com",
         "models": [
             {
-                "name": "Deepseek-Think-Model(681B/A37B/128K Context)",
+                "name": "Deepseek-Think-Model(685.4B/A37B/128K Context)",
                 "id": "deepseek-reasoner",
                 "uid": "deepseek-reasoner",
                 "type": "chat"
             },
             {
-                "name": "Deepseek-Chat-Model(681B/A37B/128K Context)",
+                "name": "Deepseek-Chat-Model(685.4B/A37B/128K Context)",
                 "id": "deepseek-chat",
                 "uid": "deepseek-chat",
                 "type": "chat"
