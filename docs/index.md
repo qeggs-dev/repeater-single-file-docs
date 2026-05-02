@@ -323,6 +323,13 @@ Model INFO Server 允许你通过 `/models` 查询模型资源
 `/models/<input_str>` 会返回一个或多个模型对象
 如果返回的列表中存在多个模型对象，那么随机取一个进行生成
 
+### Tool Calls
+
+由于 Repeater 的上下文处理流程完全依赖于自建对象
+迁移到 LangChain 会破坏这些已有的逻辑
+所以 Repeater 的该部分为原生实现
+详情请看 [Tool Calls](./server-docs/docs/tool_calls/index.md)
+
 ### 官方实例
 
 Repeater 是一个系列，现在出了五个了，每一个都有独立的配置和角色设定，代码完全一致
