@@ -307,6 +307,22 @@ Repeater Nexus 是一个独立的 ID 化 JSON 数据存储服务
 在你连接到它时，用户可以主动去上传下载数据
 当多个实例同时连接到同一个 Nexus 时，数据可以从其他实例中下载
 
+### 模型查询
+
+Model INFO Server 允许你通过 `/models` 查询模型资源
+方法如下：
+- `/models` 获取全部模型
+- `/models/<provider_id>/<model_id>` 定位一个模型
+- `/models/<provider_id>` 获取指定供应商的所有模型
+- `/models/<model_id>` 从所有包含该模型的供应商中获取该模型
+- `/models/match:<regex>` 匹配模型 ID （全量匹配）
+- `/models/search:<regex>` 匹配模型 ID （存在匹配）
+- `/models?json_schema=<json_schema>` 获取序列化后符合规定的模型
+
+当用户在用户配置或服务器配置里填写模型 ID 时
+`/models/<input_str>` 会返回一个或多个模型对象
+如果返回的列表中存在多个模型对象，那么随机取一个进行生成
+
 ### 官方实例
 
 Repeater 是一个系列，现在出了五个了，每一个都有独立的配置和角色设定，代码完全一致
