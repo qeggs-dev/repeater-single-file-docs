@@ -48,7 +48,7 @@ Repeater 系统太复杂了，我认为你大概率没有耐心去深度探索�
 ## Version
 
 Adaptation Repeater v4.6.0.0
-Last Update Time: 2026-05-02 15:52:40
+Last Update Time: 2026-05-02 22:50:46
 
 ---
 
@@ -653,7 +653,7 @@ Repeater 使用了 Markdown 语法进行文本渲染
       - model_info_obj.md
       - model_type.md
     - README.md
-  - models_api.json
+  - models_providers.json
   - nexus-docs
     - docs
       - apis
@@ -12791,652 +12791,71 @@ When the program returns an `UNKNOWN_ERROR`, it writes the traceback to the `Tra
 [MIT License](LICENSE)
 [file content end]
 
-# 官方实例模型列表
+# 官方实例模型供应商列表
 
-PS: 名称仅负责显示，对运行无影响，此处名称中标记有该模型规模（在未明确写出参数量的模型结合网络搜索得到的）
+PS: 模型为自动获取，配置中不存在模型列表。
 
 ``` json
-[
-    {
-        "name": "Deepseek",
-        "api_key_env": "DEEPSEEK_API_KEY",
-        "url": "https://api.deepseek.com",
-        "models": [
-            {
-                "name": "Deepseek V4 Pro (1.6T/A49B/F8_E4M3·BF16·I64·I8/1M Context)",
-                "id": "deepseek-v4-pro",
-                "uid": "deepseek-v4-pro",
-                "type": "chat"
-            },
-            {
-                "name": "Deepseek V4 Flash (292.02B/A13B/I64·F8_E8M0·I8·F8_E4M3/1M Context)",
-                "id": "deepseek-v4-flash",
-                "uid": "deepseek-v4-flash",
-                "type": "chat"
-            },
-            {
-                "name": "Deepseek V4 Flash (292.02B/A13B/I64·F8_E8M0·I8·F8_E4M3/1M Context)",
-                "id": "deepseek-chat",
-                "uid": "deepseek-chat",
-                "type": "chat"
-            },
-            {
-                "name": "Deepseek V4 Flash Thinking (292.02B/A13B/I64·F8_E8M0·I8·F8_E4M3/1M Context)",
-                "id": "deepseek-reasoner",
-                "uid": "deepseek-reasoner",
-                "type": "chat"
-            }
-        ]
-    },
-    {
-        "name": "MoonShot",
-        "api_key_env": "MOONSHOT_API_KEY",
-        "url": "https://api.moonshot.cn/v1",
-        "models": [
-            {
-                "name": "Kimi-K2-0905 (1T/A32B/256K Context)",
-                "id": "kimi-k2-0905-preview",
-                "uid": "kimi-k2-0905-preview",
-                "type": "chat"
-            },
-            {
-                "name": "Kimi-K2-0711 (1T/A32B/128K Context)",
-                "id": "kimi-k2-0711-preview",
-                "uid": "kimi-k2-0711-preview",
-                "type": "chat"
-            },
-            {
-                "name": "Kimi-K2-Turbo (1T/A32B/256K Context)",
-                "id": "kimi-k2-turbo-preview",
-                "uid": "kimi-k2-turbo-preview",
-                "type": "chat"
-            },
-            {
-                "name": "Kimi-K2-Thinking (1T/A32B/256K Context)",
-                "id": "kimi-k2-thinking",
-                "uid": "kimi-k2-thinking",
-                "type": "chat"
-            },
-            {
-                "name": "Kimi-K2-Thinking-Turbo (1T/A32B/256K Context)",
-                "id": "kimi-k2-thinking-turbo",
-                "uid": "kimi-k2-thinking-turbo",
-                "type": "chat"
-            },
-            {
-                "name": "Kimi-K2.5 (1T/A32B/256K Context/Omnimodal)",
-                "id": "kimi-k2.5",
-                "uid": "kimi-k2.5",
-                "type": "chat"
-            },
-            {
-                "name": "Kimi-K2.6 (1T/A32B/256K Context/Omnimodal)",
-                "id": "kimi-k2.6",
-                "uid": "kimi-k2.6",
-                "type": "chat"
-            }
-        ]
-    },
-    {
-        "name": "BigModel",
-        "api_key_env": "BIGMODEL_API_KEY",
-        "url": "https://open.bigmodel.cn/api/paas/v4/",
-        "models": [
-            {
-                "name": "GLM-5.1(744B/A40B/200K Context)",
-                "id": "glm-5.1",
-                "uid": "glm-5.1",
-                "type": "chat"
-            },
-            {
-                "name": "GLM-5(744B/A40B/200K Context)",
-                "id": "glm-5",
-                "uid": "glm-5",
-                "type": "chat"
-            },
-            {
-                "name": "GLM-5V(744B/A40B/200K Context)",
-                "id": "glm-5v-turbo",
-                "uid": "glm-5v-turbo",
-                "type": "chat"
-            },
-            {
-                "name": "GLM-5-Turbo(744B/A40B/200K Context)",
-                "id": "glm-5-turbo",
-                "uid": "glm-5-turbo",
-                "type": "chat"
-            },
-            {
-                "name": "GLM-4.7(355B/A32B/200K Context)",
-                "id": "glm-4.7",
-                "uid": "glm-4.7",
-                "type": "chat"
-            },
-            {
-                "name": "GLM-4.6(355B/A32B/200K Context)",
-                "id": "glm-4.6",
-                "uid": "glm-4.6",
-                "type": "chat"
-            },
-            {
-                "name": "GLM-4.6V(106B/128K Context/MultiModal)",
-                "id": "glm-4.6v",
-                "uid": "glm-4.6v",
-                "type": "chat"
-            },
-            {
-                "name": "GLM-4.5(355B/A32B/128K Context)",
-                "id": "glm-4.5",
-                "uid": "glm-4.5",
-                "type": "chat"
-            }
-        ]
-    },
-    {
-        "name": "Dashscope",
-        "api_key_env": "DASHSCOPE_API_KEY",
-        "url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "models": [
-            {
-                "name": "Qwen3.6-Plus (1M Context/MultiModal)",
-                "id": "qwen3.6-plus",
-                "uid": "qwen3.6-plus",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3.6-Max (256K Context)",
-                "id": "qwen3.6-max-preview",
-                "uid": "qwen3.6-max-preview",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3.5-Plus (1M Context/MultiModal)",
-                "id": "qwen3.5-plus",
-                "uid": "qwen3.5-plus",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3.5-397B-A17B (256K Context/MultiModal)",
-                "id": "qwen3.5-397b-a17b",
-                "uid": "qwen3.5-397b-a17b",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3.5-Omni-Plus (256K Context/Omnimodal)",
-                "id": "qwen3.5-omni-plus",
-                "uid": "qwen3.5-omni-plus",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3.5-Omni-Flash (256K Context/Omnimodal)",
-                "id": "qwen3.5-omni-flash",
-                "uid": "qwen3.5-omni-flash",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-Max (1T/A100B/256K Context)",
-                "id": "qwen3-max",
-                "uid": "qwen3-max",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen-Plus (1M Context)",
-                "id": "qwen-plus",
-                "uid": "qwen-plus",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-VL-Plus (256K Context/MultiModal)",
-                "id": "qwen3-vl-plus",
-                "uid": "qwen3-vl-plus",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen-Omni-Turbo (32K Context/Omnimodal)",
-                "id": "qwen-omni-turbo",
-                "uid": "qwen-omni-turbo",
-                "type": "chat"
-            },
-            {
-                "name": "Deepseek R1 (684.53B/A37B/F32·F8_E4M3·BF16/128K Context)",
-                "id": "deepseek-r1",
-                "uid": "deepseek-r1",
-                "type": "chat"
-            },
-            {
-                "name": "Deepseek V3 (684.53B/A37B/F8_E4M3·BF16·F32/64K Context)",
-                "id": "deepseek-v3",
-                "uid": "deepseek-v3",
-                "type": "chat"
-            },
-            {
-                "name": "Deepseek R1 0528 (684.53B/A37B/BF16·F8_E4M3·F32/163.84K Context)",
-                "id": "deepseek-r1-0528",
-                "uid": "deepseek-r1-0528",
-                "type": "chat"
-            },
-            {
-                "name": "Deepseek V3.1 (684.53B/A37B/F32·BF16·F8_E4M3/128K Context)",
-                "id": "deepseek-v3.1",
-                "uid": "deepseek-v3.1",
-                "type": "chat"
-            },
-            {
-                "name": "Deepseek V3.2-Exp (685.4B/A37B/BF16·F32·F8_E4M3/128K Context)",
-                "id": "deepseek-v3.2-exp",
-                "uid": "deepseek-v3.2-exp",
-                "type": "chat"
-            },
-            {
-                "name": "Deepseek V3.2 (685.4B/A37B/BF16·F32·F8_E4M3/128K Context)",
-                "id": "deepseek-v3.2",
-                "uid": "deepseek-v3.2",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen Plus Character (32K Context)",
-                "id": "qwen-plus-character",
-                "uid": "qwen-plus-character",
-                "type": "chat"
-            }
-        ]
-    },
-    {
-        "name": "Baidu Qianfan",
-        "api_key_env": "QIANFAN_API_KEY",
-        "url": "https://qianfan.baidubce.com/v2",
-        "models": [
-            {
-                "name": "ERNIE-4.5-Turbo (400B+/A28B/128K Context)",
-                "id": "ernie-4.5-turbo-128k",
-                "uid": "ernie-4.5-turbo",
-                "type": "chat"
-            },
-            {
-                "name": "ERNIE-X1.1 (400B+/A28B/128K Context)",
-                "id": "ernie-x1.1",
-                "uid": "ernie-x1.1",
-                "type": "chat"
-            },
-            {
-                "name": "ERNIE-5.0-Thinking-Preview (400B+/A28B/128K Context/Omnimodal)",
-                "id": "ernie-5.0-thinking-preview",
-                "uid": "ernie-5.0-thinking",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-Coder-480B-A35B-Instruct (128K Context)",
-                "id": "qwen3-coder-480b-a35b-instruct",
-                "uid": "qwen3-coder-480b-a35b-instruct",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-Coder-30B-A3B-Instruct (128K Context)",
-                "id": "qwen3-coder-30b-a3b-instruct",
-                "uid": "qwen3-coder-30b-a3b-instruct",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-Next-80B-A3B-Instruct (128K Context)",
-                "id": "qwen3-next-80b-a3b-instruct",
-                "uid": "qwen3-next-80b-a3b-instruct",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-235B-A22B-Instruct-2507 (128K Context)",
-                "id": "qwen3-235b-a22b-instruct-2507",
-                "uid": "qwen3-235b-a22b-instruct-2507",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-30B-A3B-Instruct-2507 (128K Context)",
-                "id": "qwen3-30b-a3b-instruct-2507",
-                "uid": "qwen3-30b-a3b-instruct-2507",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-235B-A22B (32K Context)",
-                "id": "qwen3-235b-a22b",
-                "uid": "qwen3-235b-a22b",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-30B-A3B (32K Context)",
-                "id": "qwen3-30b-a3b",
-                "uid": "qwen3-30b-a3b",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-32B (32K Context)",
-                "id": "qwen3-32b",
-                "uid": "qwen3-32b",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-14B (32K Context)",
-                "id": "qwen3-14b",
-                "uid": "qwen3-14b",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-8B (32K Context)",
-                "id": "qwen3-8b",
-                "uid": "qwen3-8b",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-4B (32K Context)",
-                "id": "qwen3-4b",
-                "uid": "qwen3-4b",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-1.7B (32K Context)",
-                "id": "qwen3-1.7b",
-                "uid": "qwen3-1.7b",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-0.6B (32K Context)",
-                "id": "qwen3-0.6b",
-                "uid": "qwen3-0.6b",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen2.5-7B-Instruct (32K Context)",
-                "id": "qwen2.5-7b-instruct",
-                "uid": "qwen2.5-7b-instruct",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-VL-32B-Instruct (128K Context/MultiModal)",
-                "id": "qwen3-vl-32b-instruct",
-                "uid": "qwen3-vl-32b-instruct",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-VL-32B-Thinking (128K Context/MultiModal)",
-                "id": "qwen3-vl-32b-thinking",
-                "uid": "qwen3-vl-32b-thinking",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-VL-8B-Instruct (128K Context/MultiModal)",
-                "id": "qwen3-vl-8b-instruct",
-                "uid": "qwen3-vl-8b-instruct",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-VL-8B-Thinking (128K Context/MultiModal)",
-                "id": "qwen3-vl-8b-thinking",
-                "uid": "qwen3-vl-8b-thinking",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-VL-30B-A3B-Instruct (128K Context/MultiModal)",
-                "id": "qwen3-vl-30b-a3b-instruct",
-                "uid": "qwen3-vl-30b-a3b-instruct",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-VL-30B-A3B-Thinking (128K Context/MultiModal)",
-                "id": "qwen3-vl-30b-a3b-thinking",
-                "uid": "qwen3-vl-30b-a3b-thinking",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-VL-235B-A22B-Instruct (128K Context/MultiModal)",
-                "id": "qwen3-vl-235b-a22b-instruct",
-                "uid": "qwen3-vl-235b-a22b-instruct",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen3-VL-235B-A22B-Thinking (128K Context/MultiModal)",
-                "id": "qwen3-vl-235b-a22b-thinking",
-                "uid": "qwen3-vl-235b-a22b-thinking",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen2.5-VL-32B-Instruct (32K Context/MultiModal)",
-                "id": "qwen2.5-vl-32b-instruct",
-                "uid": "qwen2.5-vl-32b-instruct",
-                "type": "chat"
-            },
-            {
-                "name": "Qwen2.5-VL-7B-Instruct (16K Context/MultiModal)",
-                "id": "qwen2.5-vl-7b-instruct",
-                "uid": "qwen2.5-vl-7b-instruct",
-                "type": "chat"
-            }
-        ]
-    },
-    {
-        "name": "SiliconFlow",
-        "api_key_env": "SILICONFLOW_API_KEY",
-        "url": "https://api.siliconflow.com/v1",
-        "models": [
-            {
-                "name": "Ring-Flash-2.0 (106B/A6B/128K Context)",
-                "id": "inclusionAI/Ring-flash-2.0",
-                "uid": "ring-flash-2.0",
-                "type": "chat"
-            },
-            {
-                "name": "Ling-Flash-2.0 (106B/A6B/128K Context)",
-                "id": "inclusionAI/Ling-flash-2.0",
-                "uid": "ling-flash-2.0",
-                "type": "chat"
-            },
-            {
-                "name": "Ling-Mini-2.0 (16B/A1.4B/128K Context)",
-                "id": "inclusionAI/Ling-mini-2.0",
-                "uid": "ling-mini-2.0",
-                "type": "chat"
-            },
-            {
-                "name": "Step-3.5-Flash (196B/A11B/256K Context)",
-                "id": "inclusionAI/Step-3.5-Flash",
-                "uid": "step-3.5-flash",
-                "type": "chat"
-            },
-            {
-                "name": "MiniMax-M2.5 (229B/A10B/200K Context)",
-                "id": "Pro/MiniMaxAI/MiniMax-M2.5",
-                "uid": "minimax-m2.5",
-                "type": "chat"
-            },
-            {
-                "name": "Hunyuan-A13B-Instruct (80B/A13B/128K Context)",
-                "id": "tencent/Hunyuan-A13B-Instruct",
-                "uid": "hunyuan-a13b-instruct",
-                "type": "chat"
-            },
-            {
-                "name": "Deepseek 2.5 (235.74B/A2.1B/BF16/32K Context)",
-                "id": "deepseek-ai/DeepSeek-V2.5",
-                "uid": "deepseek-2.5",
-                "type": "chat"
-            }
-        ]
-    },
-    {
-        "name": "Ofox AI",
-        "api_key_env": "OFOX_API_KEY",
-        "url": "https://api.ofox.ai/v1",
-        "models": [
-            {
-                "name": "GPT 5.4 Pro (1M Context/MultiModal)",
-                "id": "openai/gpt-5.4-pro",
-                "uid": "gpt-5.4-pro",
-                "type": "chat"
-            },
-            {
-                "name": "GPT 5.4 (1M Context/MultiModal)",
-                "id": "openai/gpt-5.4",
-                "uid": "gpt-5.4",
-                "type": "chat"
-            },
-            {
-                "name": "Claude Opus 4.6 (1M Context/MultiModal)",
-                "id": "anthropic/claude-opus-4.6",
-                "uid": "claude-opus-4.6",
-                "type": "chat"
-            },
-            {
-                "name": "Claude Opus 4.5 (1M Context/MultiModal)",
-                "id": "anthropic/claude-opus-4.5",
-                "uid": "claude-opus-4.5",
-                "type": "chat"
-            },
-            {
-                "name": "Claude Sonnet 4.6 (1M Context/MultiModal)",
-                "id": "anthropic/claude-sonnet-4.6",
-                "uid": "claude-opus-4.6",
-                "type": "chat"
-            },
-            {
-                "name": "Claude Sonnet 4.5 (1M Context/MultiModal)",
-                "id": "anthropic/claude-sonnet-4.5",
-                "uid": "claude-opus-4.5",
-                "type": "chat"
-            },
-            {
-                "name": "Gemini 3 Pro Preview (1M Context/MultiModal)",
-                "id": "google/gemini-3-pro-preview",
-                "uid": "gemini-3-pro-preview",
-                "type": "chat"
-            },
-            {
-                "name": "GLM 4.7 Flash (free/200K Context)",
-                "id": "z-ai/glm-4.7-flash:free",
-                "uid": "glm-4.7-flash",
-                "type": "chat"
-            }
-        ]
-    },
-    {
-        "name": "OpenRouter",
-        "api_key_env": "OPEN_ROUTER_API_KEY",
-        "url": "https://openrouter.ai/api/v1",
-        "models": [
-            {
-                "name": "OpenAI: GPT-3.5 Turbo v0301 (175B/4K Context)",
-                "id": "openai/gpt-3.5-turbo-0301",
-                "uid": "gpt-3.5-turbo-0301",
-                "type": "chat"
-            },
-            {
-                "name": "OpenAI: GPT-3.5 Turbo 16K (175B/16K Context)",
-                "id": "openai/gpt-3.5-turbo-16k",
-                "uid": "gpt-3.5-turbo-16k",
-                "type": "chat"
-            },
-            {
-                "name": "OpenAI: GPT-3.5 Turbo 1106 (175B/16K Context)",
-                "id": "openai/gpt-3.5-turbo-1106",
-                "uid": "gpt-3.5-turbo-1106",
-                "type": "chat"
-            },
-            {
-                "name": "Anthropic: Claude Opus 4.6 (1M Context)",
-                "id": "anthropic/claude-opus-4.6",
-                "uid": "claude-opus-4.6",
-                "type": "chat"
-            },
-            {
-                "name": "OpenAI: GPT-4 (32K Context)",
-                "id": "openai/gpt-4-32k-0314",
-                "uid": "gpt-4-32k-0314",
-                "type": "chat"
-            },
-            {
-                "name": "OpenAI: GPT-4 Vision (32K Context/MultiModal)",
-                "id": "openai/gpt-4-vision-preview",
-                "uid": "gpt-4-vision-preview",
-                "type": "chat"
-            },
-            {
-                "name": "Google: Gemini 1.5 Pro (2M Context)",
-                "id": "google/gemini-pro-1.5",
-                "uid": "gemini-pro-1.5",
-                "type": "chat"
-            },
-            {
-                "name": "OpenAI: ChatGPT-4o (128K Context/Omnimodal)",
-                "id": "openai/chatgpt-4o-latest",
-                "uid": "gpt-4o",
-                "type": "chat"
-            },
-            {
-                "name": "OpenAI: o1-preview (128K Context)",
-                "id": "openai/o1-preview-2024-09-12",
-                "uid": "o1-preview",
-                "type": "chat"
-            },
-            {
-                "name": "xAI: Grok 2 (32K Context)",
-                "id": "x-ai/grok-2",
-                "uid": "grok-2",
-                "type": "chat"
-            },
-            {
-                "name": "xAI: Grok Beta (32K Context)",
-                "id": "x-ai/grok-beta",
-                "uid": "grok-beta",
-                "type": "chat"
-            },
-            {
-                "name": "xAI: Grok 4.20 (2M Context)",
-                "id": "x-ai/grok-4.20-beta",
-                "uid": "grok-beta",
-                "type": "chat"
-            },
-            {
-                "name": "xAI: Grok Vision Beta (32K Context/MultiModal)",
-                "id": "x-ai/grok-vision-beta",
-                "uid": "grok-vision-beta",
-                "type": "chat"
-            },
-            {
-                "name": "Gemini 3.1 Pro Preview(1.05M Context/Omnimodal)",
-                "id": "google/gemini-3.1-pro-preview",
-                "uid": "gemini-3.1-pro-preview",
-                "type": "chat"
-            },
-            {
-                "name": "MiMo V2 Omni(1T/A42B/262K Context/Omnimodal)",
-                "id": "xiaomi/mimo-v2-omni",
-                "uid": "mimo-v2-omni",
-                "type": "chat"
-            }
-        ]
-    },
-    {
-        "name": "Metaso",
-        "api_key_env": "METASO_API_KEY",
-        "url": "https://metaso.cn/api/v1",
-        "models": [
-            {
-                "name": "Metaso: Fast",
-                "id": "metaso/fast",
-                "uid": "metaso-fast",
-                "type": "chat"
-            },
-            {
-                "name": "Metaso: Fast Thinking",
-                "id": "metaso/fast_thinking",
-                "uid": "metaso-fast_thinking",
-                "type": "chat"
-            },
-            {
-                "name": "Metaso: Deepseek R1",
-                "id": "metaso/deepseek_r1",
-                "uid": "metaso-deepseek_r1",
-                "type": "chat"
-            }
-        ]
-    }
-]
+{
+    "type": "model_group_config.v1",
+    "providers": [
+        {
+            "name": "Deepseek",
+            "id": "deepseek",
+            "api_key_env": "DEEPSEEK_API_KEY",
+            "url": "https://api.deepseek.com"
+        },
+        {
+            "name": "Moonshot",
+            "id": "moonshot",
+            "api_key_env": "MOONSHOT_API_KEY",
+            "url": "https://api.moonshot.cn/v1"
+        },
+        {
+            "name": "BigModel",
+            "id": "bigmodel",
+            "api_key_env": "BIGMODEL_API_KEY",
+            "url": "https://open.bigmodel.cn/api/paas/v4/"
+        },
+        {
+            "name": "Dashscope",
+            "id": "dashscope",
+            "api_key_env": "DASHSCOPE_API_KEY",
+            "url": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+        },
+        {
+            "name": "Baidu Qianfan",
+            "id": "qianfan",
+            "api_key_env": "QIANFAN_API_KEY",
+            "url": "https://qianfan.baidubce.com/v2"
+        },
+        {
+            "name": "SiliconFlow",
+            "id": "siliconflow",
+            "api_key_env": "SILICONFLOW_API_KEY",
+            "url": "https://api.siliconflow.com/v1"
+        },
+        {
+            "name": "Ofox AI",
+            "id": "ofox",
+            "api_key_env": "OFOX_API_KEY",
+            "url": "https://api.ofox.ai/v1"
+        },
+        {
+            "name": "OpenRouter",
+            "id": "openrouter",
+            "api_key_env": "OPEN_ROUTER_API_KEY",
+            "url": "https://openrouter.ai/api/v1"
+        },
+        {
+            "name": "Metaso",
+            "id": "metaso",
+            "api_key_env": "METASO_API_KEY",
+            "url": "https://metaso.cn/api/v1"
+        }
+    ],
+    "library_file": "./configs/providers.json"
+}
 ```
 
 ## 日志示例
