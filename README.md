@@ -28,7 +28,7 @@
 
 - [Repeater 主服务文档](./docs/server-docs/README.md)
 - [基于 NoneBot 的 Repeater 客户端实现文档](./docs/client-docs/README.md)
-- [模型信息服务](./docs/modelapi-info-server-docs/README.md)
+- [模型信息服务](./docs/model-info-server-docs/README.md)
 - [Nexus](./docs/nexus-docs/README.md)
 - [HTML 渲染服务](./docs/render-server-docs/README.md)
 - [静态资源服务](./docs/static-resources-server-docs/README.md)
