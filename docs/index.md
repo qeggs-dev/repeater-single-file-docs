@@ -10,7 +10,7 @@
 
 ## Version
 
-Adaptation Repeater v4.6.0.0
+Adaptation Repeater v4.6.1.0
 Last Update Time: {{ now.strftime("%Y-%m-%d %H:%M:%S") }}
 
 ---
@@ -736,6 +736,15 @@ Repeater 并未有过所谓的 Feelings Server 组件
 {{ merge_text("./static-data/prompt/presets/official/legacy/secret-diary.md") }}
 
 {{ merge_text("./static-data/prompt/presets/official/legacy/coming-of-age.md") }}
+
+#### Directives
+
+这是一种短的子模板
+通常被主模板加载并渲染
+可以作为模块化提示词使用
+
+{{merge_text("./static-data/prompt/directives")}}
+
 
 ### 文档
 
