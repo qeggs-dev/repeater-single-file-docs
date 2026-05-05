@@ -717,45 +717,17 @@ Laurel：(别过脸)「Bloody hell！你管我！」
 
 ---
 
-## 用户设定
-
-{% with -%}
-  {%- set prefix = "用户名：\n" -%}
-  {{- prefix -}}
-  {%- if user_custom_name -%}
-    **{{- user_custom_name -}}**
-  {%- else -%}
-    **{{- user_name -}}({{nick_name}})**
+{%  set directives_total_count = directive_ids(["information", "specification"]) | list | length -%}
+{% for directive in directives(["information", "specification"]) %}
+  {%- if not loop.first -%}
+    {{- "\n\n---\n\n" -}}
   {%- endif -%}
-{%- endwith %}
+  {{ directive -}}
+{% endfor %}
 
-{%- with -%}
-  {%- set prefix = "\n用户年龄：" -%}
-  {{- prefix -}}
-  {%- if user_custom_age -%}
-    **{{- user_custom_age -}}**
-  {%- elif user_age -%}
-    **{{- user_age -}}**
-  {%- endif -%}
-{%- endwith %}
-
-{%- with -%}
-  {%- set prefix = "\n用户性别：" -%}
-  {%- if user_custom_gender -%}
-    {{- prefix -}}
-    **{{- user_custom_gender -}}**
-  {%- elif user_gender -%}
-    {{- prefix -}}
-    **{{- user_gender -}}**
-  {%- endif -%}
-{%- endwith %}
-
-{% if user_profile -%}
-用户设定：
-{{user_profile}}
-{%- endif %}
-
----
+{%- if directives_total_count > 0 -%}
+{{- "\n\n---\n\n" -}}
+{%- endif -%}
 
 ## 🔮系统变量
 
