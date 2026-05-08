@@ -94,12 +94,12 @@ NoneBot + FastAPI + OpenAI SDK
 最小运行 2 个服务，也就是 Repeater Server + Model INFO Server
 如果你要带上 NoneBot Repeater Client 的话，则还需要配置一个 Render Server 才可以正常使用
 其中：
-- `Repeater Server` (18.9k+ Code) 是核心服务，提供 API 接口，有状态，必须部署
-- `Model INFO Server` (1k+ Code) 用于提供模型信息，如模型名称、模型 API Key 等信息，以在多实例中方便集中管理，必须部署
-- `Repeater Render Server` (3k+ Code) 用于进行内容渲染，无状态，可选部署，如果你不需要 Markdown 渲染功能的话
-- `NoneBot Repeater Client` (10.9k+ Code) 是 NoneBot 插件，用于将 Repeater API 安全的对接到群聊中，无状态，可选部署
-- `Repeater Nexus` (0.9k+ Code) 用于进行数据的跨用户、跨实例分享，无状态，可选部署
-- `Notes Client` (2k+ Code) 是一个增值服务，用于自动生成一些内容，这写内容可以当作机器人的日记，可多后端，可选部署
+- `Repeater Server` (19.3k+ Code) 是核心服务，提供 API 接口，有状态，必须部署
+- `Model INFO Server` (1.2k+ Code) 用于提供模型信息，如模型名称、模型 API Key 等信息，以在多实例中方便集中管理，必须部署
+- `Repeater Render Server` (3.2k+ Code) 用于进行内容渲染，无状态，可选部署，如果你不需要 Markdown 渲染功能的话
+- `NoneBot Repeater Client` (11.1k+ Code) 是 NoneBot 插件，用于将 Repeater API 安全的对接到群聊中，无状态，可选部署
+- `Repeater Nexus` (1.1k+ Code) 用于进行数据的跨用户、跨实例分享，无状态，可选部署
+- `Notes Client` (1.7k+ Code) 是一个增值服务，用于自动生成一些内容，这写内容可以当作机器人的日记，可多后端，可选部署
 - `Auto Backup` (0.3k+ Code) 是一个增值服务，用于自动备份用户数据，防止数据丢失，无网络，可选部署
 - `Static Resources Server` (0.3k+ Code) 静态资源服务器，用于提供静态资源，如图片、CSS、JS、HTML、人设提示词等内容，无状态，可选部署，可用 Repeater Server 内置静态服务替代
 因为分体，各种功能可以直接通过网络去操作程序执行，而不需要插件 Hook
